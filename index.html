@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Harry Potter's World!</title>
+    <style>
+        body {
+            background-color: rgb(254, 212, 4);
+        }
+        h1 {
+            font-family: 'Brush Script MT';
+            font-size: 70px;
+        }
+        .container {
+            display: flex; /* 启用Flexbox布局 */
+            align-items: center; /* 垂直居中对齐 */
+            gap: 20px; /* 添加图片之间的间距 */
+        }
+        
+        .image {
+            width: 200px; /* 设定图片宽度 */
+            height: auto; /* 自动调整高度 */
+        }
+        
+        .text {
+            padding-left: 10px; /* 文字左侧的内边距 */
+        }
+    </style>
+</head>
+<body>
+    <audio controls loop> 
+        <!--play the music-->
+        <source src="sound/哈利波特声音.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div style="margin-left: 20%">
+        <picture>
+            <img src="newimg/Harry Potter font picture.jpg" alt="Harry Potter Font Picture" style="width: 75%;">
+        </picture>
+    </div>
+    <div style="margin-left: 20%">
+        <h1>Welcome to Harry Potter's World!</h1>
+    </div>
+    <div class="container">
+        <img src="newimg/Harry Potter picture.webp" alt="Harry Potter Picture" class="image">
+        <div class="text">
+            <a href="magic photos.html">Click <br> here to see <br> <strong>Magic Photos</strong></a>
+        </div>
+        <img src="newimg/哈利波特飞贼图片.webp" alt="Harry Potter Magic Things" class="image">
+        <div class="text">
+            <a href="magic items.html">Click <br> here to see <br> <strong>Magic Items</strong></a>
+        </div>
+        <img src="newimg/铁三角图片.jfif" alt="Iron Triangle Picture" class="image">
+        <div class="text">
+            <a href="characters.html">Click <br> here to see <br> <strong>Characters</strong></a>
+    </div>
+</body>
+</html>

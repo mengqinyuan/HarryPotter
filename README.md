@@ -1,4 +1,3 @@
-# HarryPotter
 # Harry Potter's World Website
 
 ## Overview

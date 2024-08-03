@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Magic Items</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="item.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url("newimg/背景.jfif");
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .item-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem;
+        }
+
+        .item {
+            flex-basis: calc(33.33% - 2rem);
+            min-width: 200px;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!--左上角显示一个返回图片-->
+    <div class="return" id="return">
+        <img src="newimg/返回.png" id="return">
+    </div>
+    <header>
+        <h1>Harry Potter Magical Items</h1>
+    </header>
+    <main>
+        <div class="item-list">
+            <div class="item" id="magic-stone">
+                <h2>Philosopher's Stone</h2>
+                <img src="items/magic_stone.jpeg" alt="Philosopher's Stone"> <!--ok-->
+                <p>A magical stone capable of granting immortality.</p>
+            </div>
+            <div class="item" id="invisibility-cloak">
+                <h2>Invisibility Cloak</h2>
+                <img src="items/invisibility_cloak.jpeg" alt="Invisibility Cloak"> <!--ok-->
+                <p>A cloak that renders the wearer completely invisible.</p>
+            </div>
+            <div class="item" id="time-turner">
+                <h2>Time-Turner</h2>
+                <img src="items/time_turner.jpg" alt="Time-Turner"> <!--ok-->
+                <p>A magical device that allows the user to travel back in time.</p>
+            </div>
+            <div class="item" id="wand">
+                <h2>Wand</h2>
+                <img src="items/wand.jpg" alt="Wand"> <!--ok-->
+                <p>The primary tool used by wizards to cast spells.</p>
+            </div>
+            <div class="item" id="flying-broom">
+                <h2>Flying Broom</h2>
+                <img src="items/flying_broom.jpeg" alt="Flying Broom">
+                <p>A broomstick that allows its rider to fly.</p>
+            </div>
+            <div class="item" id="invisibility-ring">
+                <h2>Invisibility Ring</h2>
+                <img src="items/Invisibility_Ring.jfif" alt="Invisibility Ring">
+                <p>A ring that makes the wearer invisible when worn.</p>
+            </div>
+            <div class="item" id="magic-mirror">
+                <h2>Magic Mirror</h2>
+                <img src="items/magic_mirror.jpeg" alt="Magic Mirror">
+                <p>A mirror that shows the true form or future.</p>
+            </div>
+            <div class="item" id="magic-potion">
+                <h2>Magic Potion</h2>
+                <img src="items/magic_potion.jfif" alt="Magic Potion">
+                <p>A potion that grants special abilities or effects.</p>
+            </div>
+            <div class="item" id="magic-map">
+                <h2>Magic Map</h2>
+                <img src="items/magic_map.jpeg" alt="Magic Map">
+                <p>A map that reveals hidden locations and secrets.</p>
+            </div>
+            <div class="item" id="magic-book">
+                <h2>Magic Book</h2>
+                <img src="items/magic_book.webp" alt="Magic Book">
+                <p>A book that contains powerful spells and knowledge.</p>
+            </div>
+            <div class="item" id="magic-bezoar">
+                <h2>Bezoar</h2>
+                <img src="items/bezoar.jfif" alt="Bezoar">
+                <p>A stone-like object that can counteract poisons.</p>
+            </div>
+            <div class="item" id="magic-quill">
+                <h2>Quill of Acceptance</h2>
+                <img src="items/quill_of_acceptance.jfif" alt="Quill of Acceptance">
+                <p>A quill that writes down the names of students accepted into Hogwarts.</p>
+            </div>
+            <div class="item" id="magic-robe">
+                <h2>Robe of Daylight</h2>
+                <img src="items/robe_of_daylight.jfif" alt="Robe of Daylight">
+                <p>A robe that protects the wearer from the darkness.</p>
+            </div>
+            <div class="item" id="magic-compass">
+                <h2>Compass of Direction</h2>
+                <img src="items/compass_of_direction.jfif" alt="Compass of Direction">
+                <p>A compass that always points towards the desired destination.</p>
+            </div>
+            <div class="item" id="magic-armor">
+                <h2>Armor of Antioch</h2>
+                <img src="items/armor_of_antioch.jfif" alt="Armor of Antioch">
+                <p>Armor that provides protection against dark magic.</p>
+            </div>
+            <div class="item" id="magic-goblet">
+                <h2>Goblet of Fire</h2>
+                <img src="items/goblet_of_fire.jfif" alt="Goblet of Fire">
+                <p>A goblet that selects participants for the Triwizard Tournament.</p>
+            </div>
+            <div class="item" id="magic-telescope">
+                <h2>Telescope of Truth</h2>
+                <img src="items/telescope_of_truth.jfif" alt="Telescope of Truth">
+                <p>A telescope that reveals the truth about what it observes.</p>
+            </div>
+            <div class="item" id="magic-pendant">
+                <h2>Pendant of Protection</h2>
+                <img src="items/pendant_of_protection.jfif" alt="Pendant of Protection">
+                <p>A pendant that shields the wearer from harm.</p>
+            </div>
+            <div class="item" id="magic-lantern">
+                <h2>Lantern of Light</h2>
+                <img src="items/lantern_of_light.jfif" alt="Lantern of Light">
+                <p>A lantern that never goes out and illuminates even the darkest places.</p>
+            </div>
+            <div class="item" id="magic-cape">
+                <h2>Cape of Concealment</h2>
+                <img src="items/cape_of_concealment.jfif" alt="Cape of Concealment">
+                <p>A cape that conceals the wearer from sight.</p>
+            </div>
+            <div class="item" id="magic-ring">
+                <h2>Ring of Regeneration</h2>
+                <img src="items/ring_of_regeneration.jfif" alt="Ring of Regeneration">
+                <p>A ring that heals injuries and regenerates lost limbs.</p>
+            </div>
+            <div class="item" id="magic-bracelet">
+                <h2>Bracelet of Binding</h2>
+                <img src="items/bracelet_of_binding.jfif" alt="Bracelet of Binding">
+                <p>A bracelet that restrains the movements of its wearer.</p>
+            </div>
+            <div class="item" id="magic-amulet">
+                <h2>Amulet of Protection</h2>
+                <img src="items/amulet_of_protection.jfif" alt="Amulet of Protection">
+                <p>An amulet that protects the wearer from attacks.</p>
+            </div>            
+        </div>
+
+        <div id="details" class="details"></div>
+    </main>    
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#return").click(function(){
+                window.location.href="index.html";
+            });
+        });
+    </script>
+</body>

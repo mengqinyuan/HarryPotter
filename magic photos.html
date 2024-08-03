@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="demo.css">
+        <link rel="stylesheet" type="text/css" href="buttons.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="bootstrap-3.3.7\dist\js/bootstrap.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#a1").hover(function(){
+                    $('#a1').attr('src','newimg/c1.gif');
+                    $("#panel1").slideDown("slow");
+                },function(){
+                    $("#a1").attr('src','newimg/c1.png')
+                    $("#panel1").slideUp();
+                });
+                    $("#a2").hover(function(){
+                    $('#a2').attr('src','newimg/c2.gif');
+                    $("#panel2").slideDown("slow");
+                },function(){
+                    $("#a2").attr('src','newimg/c2.png');
+                    $("#panel2").slideUp();
+                });
+
+
+                    $("#a3").hover(function(){
+                    $('#a3').attr('src','newimg/c3.gif');
+                    $("#panel3").slideDown("slow");
+                },function(){
+                    $("#a3").attr('src','newimg/c3.png');
+                    $("#panel3").slideUp();
+                });
+                    $("#a4").hover(function(){
+                    $('#a4').attr('src','newimg/c4.gif');
+                    $("#panel4").slideDown("slow");
+                },function(){
+                    $("#a4").attr('src','newimg/c4.png');
+                    $("#panel4").slideUp();
+                });
+
+                    $("#a5").hover(function(){
+                    $('#a5').attr('src','newimg/c5.gif');
+                    $("#panel5").slideDown("slow");
+                },function(){
+                    $("#a5").attr('src','newimg/c5.png');
+                    $("#panel5").slideUp();
+                });
+                    $(".magic").hover(function(){
+                        $('.magic').css('cursor','url("newimg/stick1.png"),pointer');
+                    });
+                    $(".stop").hover(function(){
+                    $('.tl').css('animation-play-state','paused');
+                },function(){
+                    $('.tl').css('animation-play-state','running');
+                });
+                    
+
+            });
+
+
+        </script>
+    </head>
+    <body data-spy="scroll" data-target="#myNav">
+        <!--在左上角显示返回图片-->
+        <div class="return" id="return">
+            <img src="newimg/返回.png" id="return">
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $("#return").click(function(){
+                        window.location.href="index.html";
+                    });
+                });
+            </script>
+
+        </div>
+        <div class="magic" id="magic">
+
+            <h2 style="margin: 100px;"></h2>
+            <div id="ability1" class="ability">
+                <img id="a1" src="newimg/c1.png">
+                
+                <div id="panel1" style="display:none;width: 275px;height: 66px;overflow: hidden;background-color:rgba(255, 255, 255, 0.3);
+            border:solid 1px #c3c3c3;border-top-style: none;float: left;position: relative;top: -80px; left:40px">
+            <p>Harry Potter and Nimbus 2000</p>
+                </div>
+            </div>
+
+            <div id="ability2" class="ability">
+                <img id="a2" src="newimg/c2.png">
+            
+                <div id="panel2" style="display:none;width: 205px;height: 65px;overflow: hidden;background-color:rgba(255, 255, 255, 0.3);
+            border:solid 1px #c3c3c3;border-top-style: none;float: left;position: relative;top: -25px; left:63px"><p>Gryffindor's lovely girl Hermione~</p>
+                </div>
+            </div>
+            
+            <div id="ability3" class="ability">
+                <img id="a3" src="newimg/c3.png">
+            
+                <div id="panel3" style="display:none;width: 270px;height: 45px;overflow: hidden;background-color:rgba(255, 255, 255, 0.3);
+            border:solid 1px #c3c3c3;border-top-style: none;float: left;position: relative; left:50px"><p>Wise Ron casts the Levitation Charm</p>
+                </div>
+            </div>
+
+            <div id="ability4" class="ability">
+                <img id="a4" src="newimg/c4.png">
+            
+                <div id="panel4" style="display:none;width: 210px;height: 105px;overflow: hidden;background-color:rgba(255, 255, 255, 0.3);
+            border:solid 1px #c3c3c3;border-top-style: none;float: left;position: relative; left:105px"><p>Harry Potter wins the championship at the 127th Quidditch World Cup!</p>
+                </div>
+            </div>
+
+            <div id="ability5" class="ability">
+                <img id="a5" src="newimg/c5.png">
+            
+                <div id="panel5" style="display:none;width: 200px;height: 88px;overflow: hidden;background-color:rgba(255, 255, 255, 0.3);
+            border:solid 1px #c3c3c3;border-top-style: none;float: left;position: relative; left:111px"><p>The greatest wizard, Dumbledore!</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
