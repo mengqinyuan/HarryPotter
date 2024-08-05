@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"></meta>
-        <title>Harry Potter Characters</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Character Introduction</title>
+    <link rel="stylesheet" href="style_characters.css">
+</head>
+<body>
+    <h1>Harry Potter Character Introduction</h1>
+    <div class="language-selector">
+        <label for="language-select">Select Language:</label>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="zh">Chinese</option>
+        </select>
+    </div>
+    <div class="character-card">
+        <img src="newimg/Harry Potter picture.webp" alt="Harry Potter" id="character-image">
+        <!--a new line of text to show the name-->
+        <h2 id="character-name">Harry Potter</h2>
+        <p id="character-info">Click the image to view detailed information about Harry Potter.</p>
+    </div>
+
+    <script src="script_characters.js"></script>
+</body>
 </html>
